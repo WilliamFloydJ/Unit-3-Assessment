@@ -1,14 +1,15 @@
 console.log("hello world");
 
-
-
 function handleSubmit(evt) {
-	evt.preventDefault();
-	
-	console.log('form submit');
+  evt.preventDefault();
+
+  alert("Submission was a success!");
 }
+const duckHover = () => {
+  alert("Congration , You done it");
+};
 
-
-let form = document.querySelector('form#contact');
-
-form.addEventListener('submit', handleSubmit);
+let form = document.querySelector("form#contact");
+let duck = document.querySelector("img");
+duck.addEventListener("mouseover", duckHover);
+form.addEventListener("submit", handleSubmit);
